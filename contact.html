@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffygee Portfolio</title>
+</head>
+<body>
+    <style>
+
+@import url('https://fonts.googleleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+header{
+    position:  fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.sticky{
+    background: #fff;
+    padding: 5px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.5s;
+
+}
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo{
+    color: #111;
+    margin: 20px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: sentencecase;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    margin-right: 40px;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #111;
+    text-decoration: none;
+
+}
+
+header ul li a:hover{
+    color: rgb(231, 170, 37);
+    transition: 0.4s;
+}
+header.sticky ul li a{
+    color: #111;
+}
+
+.contact{
+    background: #fff;
+    padding: 10px;
+}
+.contact h2{
+    margin-top: 150px;
+    padding: 10px;
+    margin-left: 10px;
+    color: burlywood;
+    border: #111 1px solid;
+}
+
+.contact p{
+    margin: 20px;
+}
+
+.headingwhite{
+    margin-top: 100px;
+    padding-bottom: 500px;
+}
+
+.contactInfo p{
+    color: #111;
+    padding: 10px;
+}
+
+.formBx{
+    min-width: 60%;
+
+}
+
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3{
+    margin-top: 100px;
+    color: #2196f3;
+    margin-bottom: 30px;
+}
+
+
+.contactInfo h3{
+    margin: 20px;
+    color: #2196f3;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+   
+
+}
+ 
+
+.formBx form input,
+.formBx form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+}
+
+.formBx form textarea{
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+    color: #999;
+}
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfo{
+    min-width: 40%;
+}
+.contactInfoBx{
+    position: relative;
+}
+
+
+
+
+    </style>
+
+
+
+
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    
+
+    
+        <!-------Contact  Me---------->
+        <section class="contact" id="contact">
+            <div class="">
+                <h2> Contact Me</h2>
+                <p>Let me get you a beautiful website</p>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <ul></ul></ul>
+                    <input type="submit" value="Send">
+                    <a href="https://www.goggle.com/" target="_blank" rel="noopener
+                     noreferrer"></a>
+                </form>
+            </div>
+
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBox">
+                     <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div> 
+                        <div class="text">
+                            <h3>Address</h3>
+                        <p> Deeper life Estate, <br> Ashi Road, Bodija<br>Ibadan, Oyo State.</p>
+                        </div>
+                     </div> 
+                     <div class="box">
+                        <div class="icon">
+                            <i class="fa fa=map-phone"></i>
+                        </div> 
+                        <div class="text">
+                            <h3>Phone</h3>
+                        <p>08132196470</p>
+                        </div>
+                     </div> 
+                     <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-envelope-0"></i>
+                        </div> 
+                        <div class="text">
+                            <h3>Email</h3>
+                        <p>jephthahpatrick@gmail.com</p>
+                        </div>
+                     </div>
+                    </div> 
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                const header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+            
+        </script>
+</body>
+</html>
